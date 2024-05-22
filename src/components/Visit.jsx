@@ -6,7 +6,10 @@ import turkey from '../images/turkey.jpg'
 export const Visit = () => {
   return (
     <div className="container w-[1440px] max-sm:w-full max-sm:px-2 max-w-4/5 mx-auto my-20">
-      <div className="w-1/2 flex flex-col gap-4 max-md:text-center max-md:w-full">
+      <div
+        className="w-1/2 flex flex-col gap-4 max-md:text-center max-md:w-full"
+        data-aos="fade-left"
+      >
         <h1 className="text-4xl font-bold max-md:text-2xl">
           Visit One Of Our Countries Now
         </h1>
@@ -17,7 +20,7 @@ export const Visit = () => {
         </p>
       </div>
 
-      <div className="flex gap-5 mt-10 max-lg:flex-col">
+      <div className="flex gap-5 mt-10 max-lg:flex-col"data-aos="fade-left">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
@@ -72,7 +75,7 @@ export const Visit = () => {
         </div>
       </div>
 
-      <div className="flex gap-5 mt-10 max-lg:flex-col">
+      <div className="flex gap-5 mt-10 max-lg:flex-col"data-aos="fade-right">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
@@ -124,7 +127,7 @@ export const Visit = () => {
         </div>
       </div>
 
-      <div className="flex gap-5 mt-10 max-lg:flex-col">
+      <div className="flex gap-5 mt-10 max-lg:flex-col"data-aos="fade-left">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
@@ -178,7 +181,7 @@ export const Visit = () => {
         </div>
       </div>
 
-      <div className="flex gap-5 mt-10 max-lg:flex-col">
+      <div className="flex gap-5 mt-10 max-lg:flex-col"data-aos="fade-right">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"

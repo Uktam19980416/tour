@@ -41,7 +41,10 @@ export const VisaSupport = () => {
     <>
       {/* <div className="container w-[1440px] max-w-4/5 mx-auto my-20"> */}
       <div className="container w-[1440px] max-w-4/5 max-sm:w-full mx-auto my-20 max-sm:px-2">
-        <div className="text-center w-1/2 max-md:w-full mx-auto flex flex-col gap-4">
+        <div
+          className="text-center w-1/2 max-md:w-full mx-auto flex flex-col gap-4"
+          data-aos="zoom-in"
+        >
           <h1 className="text-4xl font-bold max-md:text-2xl">Visa Support</h1>
           <p className="text-xl font-semibold max-md:text-sm">
             Experience stress-free travel with our expert visa support. We
@@ -49,7 +52,7 @@ export const VisaSupport = () => {
             smooth journey.
           </p>
         </div>
-        <div className="mt-10">
+        <div className="mt-10" data-aos="flip-up">
           <div className="splide" ref={splideRef}>
             <div className="splide__track">
               <ul className="splide__list">

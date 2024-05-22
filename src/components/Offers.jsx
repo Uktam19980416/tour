@@ -46,7 +46,10 @@ export const Offers = () => {
       className="container w-[1440px] max-w-4/5 max-sm:w-full mx-auto my-20 max-sm:px-2"
       id="tours"
     >
-      <div className="text-center w-1/2 max-md:w-full mx-auto flex flex-col gap-4">
+      <div
+        data-aos="zoom-in"
+        className="text-center w-1/2 max-md:w-full mx-auto flex flex-col gap-4"
+      >
         <h1 className="text-4xl font-bold max-md:text-2xl">
           Best Weekly Offers In Each City
         </h1>
@@ -56,7 +59,7 @@ export const Offers = () => {
           experiences.
         </p>
       </div>
-      <div className="mt-10">
+      <div className="mt-10" data-aos="flip-up">
         <div className="splide" ref={splideRef}>
           <div className="splide__track">
             <ul className="splide__list">

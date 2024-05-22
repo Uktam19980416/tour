@@ -10,6 +10,7 @@ export const Map = () => {
         loading="lazy"
         referrerPolicy="no-referrer-when-downgrade"
         className="w-full rounded-t-3xl"
+        data-aos="zoom-in"
       ></iframe>
     </div>
   )

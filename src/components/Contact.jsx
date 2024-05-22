@@ -8,7 +8,7 @@ export const Contact = () => {
           This <span className="text-slate-600">Form</span>
         </h1>
       </div>
-      <form className="mt-10 flex flex-col gap-5">
+      <form className="mt-10 flex flex-col gap-5" data-aos="zoom-in-down">
         <div className="flex items-center justify-between max-sm:flex-col gap-5">
           <label htmlFor="name" className="block text-slate-600 text-xl w-full">
             Your Name <span className="text-orange-600">*</span>

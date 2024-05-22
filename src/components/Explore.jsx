@@ -7,7 +7,10 @@ export const Explore = () => {
       className="container w-[1440px] max-sm:px-2 max-sm:w-full max-w-4/5 mx-auto my-20"
       id="about"
     >
-      <div className="w-1/2 max-md:w-full flex flex-col max-md:text-center gap-4">
+      <div
+        className="w-1/2 max-md:w-full flex flex-col max-md:text-center gap-4"
+        data-aos="fade-right"
+      >
         <h1 className="text-4xl font-bold max-md:text-2xl">
           Explore Destinations With Ease
         </h1>
@@ -16,7 +19,7 @@ export const Explore = () => {
           carefully selected for you.
         </p>
       </div>
-      <div className="flex gap-5 mt-10 max-lg:flex-col">
+      <div className="flex gap-5 mt-10 max-lg:flex-col" data-aos="fade-left">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
@@ -46,7 +49,7 @@ export const Explore = () => {
         </div>
       </div>
 
-      <div className="flex gap-5 mt-10 max-lg:flex-col">
+      <div className="flex gap-5 mt-10 max-lg:flex-col" data-aos="fade-right">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"

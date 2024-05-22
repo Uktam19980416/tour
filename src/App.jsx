@@ -10,8 +10,14 @@ import { Map } from './components/Map'
 import { Contact } from './components/Contact'
 import { Booking } from "./components/Booking"
 import { Footer } from "./components/Footer"
+import AOS from 'aos'
+import 'aos/dist/aos.css'
+import { useEffect } from 'react'
 
 function App() {
+  useEffect(() => {
+    AOS.init()
+  }, [])
   return (
     <>
       <Navbar />
