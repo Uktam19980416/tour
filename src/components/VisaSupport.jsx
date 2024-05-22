@@ -17,7 +17,15 @@ export const VisaSupport = () => {
         focus: 'center',
         perPage: 3,
         autoScroll: {
-          speed: 1,
+          speed: 0.5,
+        },
+        breakpoints: {
+          1024: {
+            perPage: 2,
+          },
+          768: {
+            perPage: 1,
+          },
         },
         extensions: { AutoScroll },
       })
@@ -31,10 +39,11 @@ export const VisaSupport = () => {
 
   return (
     <>
-      <div className="container w-[1440px] max-w-4/5 mx-auto my-20">
-        <div className="text-center w-1/2 mx-auto flex flex-col gap-4">
-          <h1 className="text-4xl font-bold">Visa Support</h1>
-          <p className="text-xl font-semibold">
+      {/* <div className="container w-[1440px] max-w-4/5 mx-auto my-20"> */}
+      <div className="container w-[1440px] max-w-4/5 max-sm:w-full mx-auto my-20 max-sm:px-2">
+        <div className="text-center w-1/2 max-md:w-full mx-auto flex flex-col gap-4">
+          <h1 className="text-4xl font-bold max-md:text-2xl">Visa Support</h1>
+          <p className="text-xl font-semibold max-md:text-sm">
             Experience stress-free travel with our expert visa support. We
             provide seamless assistance and comprehensive guidance, ensuring a
             smooth journey.
@@ -45,7 +54,7 @@ export const VisaSupport = () => {
             <div className="splide__track">
               <ul className="splide__list">
                 <li className="splide__slide">
-                  <div className="relative h-[400px]">
+                  <div className="relative">
                     <div className="w-4/6 h-[250px]">
                       <img
                         className="w-full h-full object-cover rounded-l-[10%]"
@@ -56,44 +65,50 @@ export const VisaSupport = () => {
                     <div className="p-5 flex flex-col gap-5 rounded-box border border-solid w-4/6 absolute top-10 left-32 z-50 bg-slate-50 ">
                       <div>
                         <div className="flex items-center justify-between">
-                          <p className="text-2xl font-bold">Italy</p>
-                          <p className="text-2xl font-bold text-slate-800">
+                          <p className="text-2xl font-bold max-sm:text-lg">
+                            Italy
+                          </p>
+                          <p className="text-2xl font-bold text-slate-800 max-sm:text-lg">
                             $200
                           </p>
                         </div>
                         <div className="flex items-center justify-between">
-                          <p>
+                          <p className="text-slate-500 max-sm:text-xs">
                             <span>
                               <i className="fa-solid fa-users"></i>
                             </span>
                             200 Check Ins
                           </p>
-                          <p>/person</p>
+                          <p className="text-slate-500 max-sm:text-xs">
+                            /person
+                          </p>
                         </div>
                       </div>
                       <div>
                         <hr />
                       </div>
                       <div>
-                        <p className="text-xl font-bold">Deal includes:</p>
+                        <p className="text-xl font-bold max-sm:text-lg">
+                          Deal includes:
+                        </p>
                         <ul className="list-none">
-                          <li>
+                          <li className="text-slate-500 text-xl max-sm:text-xs">
                             <span>
-                              <i className="fa-solid fa-car"></i>
+                              <i className="fa-solid fa-bookmark"></i>
                             </span>{' '}
-                            3 Nights Stay
+                            Best Prices
                           </li>
-                          <li>
+                          <li className="text-slate-500 text-xl max-sm:text-xs">
                             <span>
-                              <i className="fa-solid fa-plane-departure"></i>
+                              <i className="fa-solid fa-clock"></i>
                             </span>{' '}
-                            Breakfast
+                            Short Processing Time
                           </li>
-                          <li>
+                          <li className="text-slate-500 text-xl max-sm:text-xs">
                             <span>
-                              <i className="fa-solid fa-hotel"></i>
+                              <i className="fa-solid fa-check"></i>
                             </span>{' '}
-                            City Tour
+                            Trustworthy Assistance
                           </li>
                         </ul>
                       </div>
@@ -113,44 +128,50 @@ export const VisaSupport = () => {
                     <div className="p-5 flex flex-col gap-5 rounded-box border border-solid w-4/6 absolute top-10 left-32 z-50 bg-slate-50 ">
                       <div>
                         <div className="flex items-center justify-between">
-                          <p className="text-2xl font-bold">Italy</p>
-                          <p className="text-2xl font-bold text-slate-800">
+                          <p className="text-2xl font-bold max-sm:text-lg">
+                            Italy
+                          </p>
+                          <p className="text-2xl font-bold text-slate-800 max-sm:text-lg">
                             $200
                           </p>
                         </div>
                         <div className="flex items-center justify-between">
-                          <p>
+                          <p className="text-slate-500 max-sm:text-xs">
                             <span>
                               <i className="fa-solid fa-users"></i>
                             </span>
                             200 Check Ins
                           </p>
-                          <p>/person</p>
+                          <p className="text-slate-500 max-sm:text-xs">
+                            /person
+                          </p>
                         </div>
                       </div>
                       <div>
                         <hr />
                       </div>
                       <div>
-                        <p className="text-xl font-bold">Deal includes:</p>
+                        <p className="text-xl font-bold max-sm:text-lg">
+                          Deal includes:
+                        </p>
                         <ul className="list-none">
-                          <li>
+                          <li className="text-slate-500 text-xl max-sm:text-xs">
                             <span>
-                              <i className="fa-solid fa-car"></i>
+                              <i className="fa-solid fa-bookmark"></i>
                             </span>{' '}
-                            3 Nights Stay
+                            Best Prices
                           </li>
-                          <li>
+                          <li className="text-slate-500 text-xl max-sm:text-xs">
                             <span>
-                              <i className="fa-solid fa-plane-departure"></i>
+                              <i className="fa-solid fa-clock"></i>
                             </span>{' '}
-                            Breakfast
+                            Short Processing Time
                           </li>
-                          <li>
+                          <li className="text-slate-500 text-xl max-sm:text-xs">
                             <span>
-                              <i className="fa-solid fa-hotel"></i>
+                              <i className="fa-solid fa-check"></i>
                             </span>{' '}
-                            City Tour
+                            Trustworthy Assistance
                           </li>
                         </ul>
                       </div>

@@ -17,7 +17,7 @@ export const Offers = () => {
         focus: 'center',
         perPage: 3,
         autoScroll: {
-          speed: 1,
+          speed: 0.5,
         },
         breakpoints: {
           1024: {
@@ -42,8 +42,11 @@ export const Offers = () => {
     //   className="container w-[1440px] max-w-4/5 mx-auto my-20"
     //   id="tours"
     // >
-    <div className="my-20" id="tours">
-      <div className="text-center w-1/2 mx-auto flex flex-col gap-4">
+    <div
+      className="container w-[1440px] max-w-4/5 max-sm:w-full mx-auto my-20 max-sm:px-2"
+      id="tours"
+    >
+      <div className="text-center w-1/2 max-md:w-full mx-auto flex flex-col gap-4">
         <h1 className="text-4xl font-bold max-md:text-2xl">
           Best Weekly Offers In Each City
         </h1>
@@ -69,44 +72,48 @@ export const Offers = () => {
                   <div className="p-5 flex flex-col gap-5 rounded-box border border-solid w-4/6 absolute top-10 left-32 z-50 bg-slate-50 ">
                     <div>
                       <div className="flex items-center justify-between">
-                        <p className="text-2xl font-bold">Italy</p>
-                        <p className="text-2xl font-bold text-slate-800">
+                        <p className="text-2xl font-bold max-sm:text-lg">
+                          Italy
+                        </p>
+                        <p className="text-2xl font-bold text-slate-800 max-sm:text-lg">
                           $200
                         </p>
                       </div>
                       <div className="flex items-center justify-between">
-                        <p>
+                        <p className="text-slate-500 max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-users"></i>
                           </span>
                           200 Check Ins
                         </p>
-                        <p>/person</p>
+                        <p className="text-slate-500 max-sm:text-xs">/person</p>
                       </div>
                     </div>
                     <div>
                       <hr />
                     </div>
                     <div>
-                      <p className="text-xl font-bold">Deal includes:</p>
+                      <p className="text-xl font-bold max-sm:text-lg">
+                        Deal includes:
+                      </p>
                       <ul className="list-none">
-                        <li>
+                        <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-car"></i>
                           </span>{' '}
-                          3 Nights Stay
+                          5 Days Trip {'>'} Hotel Included
                         </li>
-                        <li>
+                        <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-plane-departure"></i>
                           </span>{' '}
-                          Breakfast
+                          Airplane Bill Included
                         </li>
-                        <li>
+                        <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-hotel"></i>
                           </span>{' '}
-                          City Tour
+                          Daily Places Visit
                         </li>
                       </ul>
                     </div>
@@ -126,44 +133,48 @@ export const Offers = () => {
                   <div className="p-5 flex flex-col gap-5 rounded-box border border-solid w-4/6 absolute top-10 left-32 z-50 bg-slate-50 ">
                     <div>
                       <div className="flex items-center justify-between">
-                        <p className="text-2xl font-bold">Italy</p>
-                        <p className="text-2xl font-bold text-slate-800">
+                        <p className="text-2xl font-bold max-sm:text-lg">
+                          Italy
+                        </p>
+                        <p className="text-2xl font-bold text-slate-800 max-sm:text-lg">
                           $200
                         </p>
                       </div>
                       <div className="flex items-center justify-between">
-                        <p>
+                        <p className="text-slate-500 max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-users"></i>
                           </span>
                           200 Check Ins
                         </p>
-                        <p>/person</p>
+                        <p className="text-slate-500 max-sm:text-xs">/person</p>
                       </div>
                     </div>
                     <div>
                       <hr />
                     </div>
                     <div>
-                      <p className="text-xl font-bold">Deal includes:</p>
+                      <p className="text-xl font-bold max-sm:text-lg">
+                        Deal includes:
+                      </p>
                       <ul className="list-none">
-                        <li>
+                        <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-car"></i>
                           </span>{' '}
-                          3 Nights Stay
+                          5 Days Trip {'>'} Hotel Included
                         </li>
-                        <li>
+                        <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-plane-departure"></i>
                           </span>{' '}
-                          Breakfast
+                          Airplane Bill Included
                         </li>
-                        <li>
+                        <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-hotel"></i>
                           </span>{' '}
-                          City Tour
+                          Daily Places Visit
                         </li>
                       </ul>
                     </div>

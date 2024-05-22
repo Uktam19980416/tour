@@ -80,8 +80,8 @@ export const Navbar = () => {
               </div>
             </div>
           </div>
-          <NavbarMobile handleLogoClick={handleLogoClick} logo={logo} />
         </div>
+          <NavbarMobile handleLogoClick={handleLogoClick} logo={logo} />
       </header>
     </>
   )

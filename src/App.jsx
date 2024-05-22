@@ -20,12 +20,12 @@ function App() {
       <VisaSupport />
       <Explore />
       <Visit />
-      <Locations />
-      <Reservation />
-      <Map />
-      <Contact />
-      <Booking />
-      <Footer />
+      {/* <Locations /> */}
+      {/* <Reservation /> */}
+      {/* <Map /> */}
+      {/* <Contact /> */}
+      {/* <Booking /> */}
+      {/* <Footer /> */}
     </>
   )
 }

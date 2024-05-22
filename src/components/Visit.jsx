@@ -5,17 +5,20 @@ import sheikh from '../images/sheikh.jpg'
 import turkey from '../images/turkey.jpg'
 export const Visit = () => {
   return (
-    <div className="container w-[1440px] max-w-4/5 mx-auto my-20">
-      <div className="w-1/2 flex flex-col gap-4">
-        <h1 className="text-4xl font-bold">Visit One Of Our Countries Now</h1>
-        <p className="text-xl text-slate-500 font-semibold">
+    <div className="container w-[1440px] max-sm:w-full max-sm:px-2 max-w-4/5 mx-auto my-20">
+      <div className="w-1/2 flex flex-col gap-4 max-md:text-center max-md:w-full">
+        <h1 className="text-4xl font-bold max-md:text-2xl">
+          Visit One Of Our Countries Now
+        </h1>
+        <p className="text-xl text-slate-500 font-semibold max-md:text-sm">
           Discover the best offers in each city, curated just for you. Immerse
           yourself in a world of savings and indulge in unparalleled
           experiences.
         </p>
       </div>
-      <div className="flex gap-5 mt-10">
-        <div className="w-4/5 h-[300px] object-cover">
+
+      <div className="flex gap-5 mt-10 max-md:flex-col">
+        <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
             src={dubai}
@@ -23,14 +26,16 @@ export const Visit = () => {
           />
         </div>
         <div className="flex flex-col gap-5">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between max-sm:flex-col">
             <div>
-              <p className="text-3xl font-bold">Dubai</p>
-              <p className="text-lg text-slate-500">United Arab Emirated</p>
+              <p className="text-3xl font-bold max-sm:text-2xl">Dubai</p>
+              <p className="text-lg text-slate-500 max-sm:text-sm">
+                United Arab Emirated
+              </p>
             </div>
             <Button text="Explore More" />
           </div>
-          <p className="text-xl leading-10 text-slate-500">
+          <p className="text-xl leading-10 text-slate-500 max-sm:text-sm max-sm:text-center">
             Dubai is a city and emirate in the United Arab Emirates known for
             luxury shopping, ultramodern architecture and a lively nightlife
             scene. Burj Khalifa, an 830m-tall tower, dominates the
@@ -40,19 +45,19 @@ export const Visit = () => {
             marine-animal parks.
           </p>
           <div className="flex items-center justify-between">
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-user"></i>
               </span>
               &nbsp; 8.66 Mil People
             </p>
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-globe"></i>
               </span>
               &nbsp; 41.290 km2
             </p>
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-house"></i>
               </span>
@@ -60,15 +65,15 @@ export const Visit = () => {
             </p>
           </div>
           <div className="cursor-pointer w-fit">
-            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all">
+            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all max-sm:text-lg">
               Need directions? <span>&#8594;</span>
             </p>
           </div>
         </div>
       </div>
 
-      <div className="flex gap-5 mt-10">
-        <div className="w-4/5 h-[300px] object-cover">
+      <div className="flex gap-5 mt-10 max-md:flex-col">
+        <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
             src={antalya}
@@ -76,14 +81,14 @@ export const Visit = () => {
           />
         </div>
         <div className="flex flex-col gap-5">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between max-sm:flex-col">
             <div>
-              <p className="text-3xl font-bold">Antalya</p>
-              <p className="text-lg text-slate-500">Turkey</p>
+              <p className="text-3xl font-bold max-sm:text-2xl">Antalya</p>
+              <p className="text-lg text-slate-500 max-sm:text-sm">Turkey</p>
             </div>
             <Button text="Explore More" />
           </div>
-          <p className="text-xl leading-10 text-slate-500">
+          <p className="text-xl leading-10 text-slate-500 max-sm:text-sm max-sm:text-center">
             Antalya is the fastest-growing city in Turkey, and tourists from
             around the world are discovering its fabulous mix of great beaches
             and traditional Turkish culture. Kids will love the Beach Park,
@@ -92,19 +97,19 @@ export const Visit = () => {
             explore the old town center and to see Hadrians Gate.
           </p>
           <div className="flex items-center justify-between">
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-user"></i>
               </span>
               &nbsp; 44.48 Mil People
             </p>
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-globe"></i>
               </span>
               &nbsp; 275.400 km2
             </p>
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-house"></i>
               </span>
@@ -112,15 +117,15 @@ export const Visit = () => {
             </p>
           </div>
           <div className="cursor-pointer w-fit">
-            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all">
+            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all max-sm:text-lg">
               Need directions? <span>&#8594;</span>
             </p>
           </div>
         </div>
       </div>
 
-      <div className="flex gap-5 mt-10">
-        <div className="w-4/5 h-[300px] object-cover">
+      <div className="flex gap-5 mt-10 max-md:flex-col">
+        <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
             src={sheikh}
@@ -128,14 +133,16 @@ export const Visit = () => {
           />
         </div>
         <div className="flex flex-col gap-5">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between max-sm:flex-col">
             <div>
-              <p className="text-3xl font-bold">Sharm El-Sheikh</p>
-              <p className="text-lg text-slate-500">Egypt</p>
+              <p className="text-3xl font-bold max-sm:text-2xl">
+                Sharm El-Sheikh
+              </p>
+              <p className="text-lg text-slate-500 max-sm:text-sm">Egypt</p>
             </div>
             <Button text="Explore More" />
           </div>
-          <p className="text-xl leading-10 text-slate-500">
+          <p className="text-xl leading-10 text-slate-500 max-sm:text-sm max-sm:text-center">
             Sharm El Sheikh is the center of tourism action in Sinai Peninsula
             and it has the world top diving sites. Specially the underwater
             wonders of Ras Mohammed national park that took Sharm city to whole
@@ -144,19 +151,19 @@ export const Visit = () => {
             to discover the un parallel marine life deep down the red sea.
           </p>
           <div className="flex items-center justify-between">
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-user"></i>
               </span>
               &nbsp; 67.41 Mil People
             </p>
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-globe"></i>
               </span>
               &nbsp; 551.500 km2
             </p>
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-house"></i>
               </span>
@@ -164,15 +171,15 @@ export const Visit = () => {
             </p>
           </div>
           <div className="cursor-pointer w-fit">
-            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all">
+            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all max-sm:text-lg">
               Need directions? <span>&#8594;</span>
             </p>
           </div>
         </div>
       </div>
 
-      <div className="flex gap-5 mt-10">
-        <div className="w-4/5 h-[300px] object-cover">
+      <div className="flex gap-5 mt-10 max-md:flex-col">
+        <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
             src={turkey}
@@ -180,14 +187,14 @@ export const Visit = () => {
           />
         </div>
         <div className="flex flex-col gap-5">
-          <div className="flex items-center justify-between">
+          <div className="flex items-center justify-between max-sm:flex-col">
             <div>
-              <p className="text-3xl font-bold">Istanbul</p>
-              <p className="text-lg text-slate-500">Turkey</p>
+              <p className="text-3xl font-bold max-sm:text-2xl">Istanbul</p>
+              <p className="text-lg text-slate-500 max-sm:text-sm">Turkey</p>
             </div>
             <Button text="Explore More" />
           </div>
-          <p className="text-xl leading-10 text-slate-500">
+          <p className="text-xl leading-10 text-slate-500 max-sm:text-sm max-sm:text-center">
             Istanbul is the most populous city in Turkey and its cultural,
             economic and historic center. It is located in north-western part of
             Turkey, divided into European and Asian side by Bosphorus, which
@@ -195,19 +202,19 @@ export const Visit = () => {
             the world that sits on two continents.
           </p>
           <div className="flex items-center justify-between">
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-user"></i>
               </span>
               &nbsp; 67.41 Mil People
             </p>
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-globe"></i>
               </span>
               &nbsp; 551.500 km2
             </p>
-            <p className="text-xl text-slate-500">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-house"></i>
               </span>
@@ -215,7 +222,7 @@ export const Visit = () => {
             </p>
           </div>
           <div className="cursor-pointer w-fit">
-            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all">
+            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all max-sm:text-lg">
               Need directions? <span>&#8594;</span>
             </p>
           </div>

@@ -46,8 +46,12 @@ class CitiesSlider extends React.Component {
   render() {
     const { activeSlide, prevSlide, sliderReady } = this.state
     return (
-      <div className={classNames('slider relative z-10', { 's--ready': sliderReady })}>
-        <p className="slider__top-heading">Travelers</p>
+      <div
+        className={classNames('slider relative z-10', {
+          's--ready': sliderReady,
+        })}
+      >
+        <p className="slider__top-heading max-sm:-translate-y-6">Travelers</p>
         <div className="slider__slides">
           {this.props.slides.map((slide, index) => (
             <div
@@ -58,10 +62,10 @@ class CitiesSlider extends React.Component {
               key={slide.city}
             >
               <div className="slider__slide-content">
-                <h3 className="slider__slide-subheading">
+                <h3 className="slider__slide-subheading max-sm:text-xl">
                   {slide.country || slide.city}
                 </h3>
-                <h2 className="slider__slide-heading font-semibold">
+                <h2 className="slider__slide-heading font-semibold max-sm:text-5xl">
                   {slide.city.split('').map((l, i) => (
                     <span key={i}>{l}</span>
                   ))}

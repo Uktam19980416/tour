@@ -1,44 +1,44 @@
-import PropTypes from 'prop-types';
+import PropTypes from 'prop-types'
 
-export const NavbarMobile = ({ handleLogoClick, logo}) => {
+export const NavbarMobile = ({ handleLogoClick, logo }) => {
   return (
     <>
-      <div className="hidden max-md:block">
+      <div className="hidden max-md:block max-sm:px-2">
         <div className="flex items-center justify-between">
           <div
             className="flex items-center cursor-pointer"
             onClick={handleLogoClick}
           >
-            <div className="w-[60px] object-cover">
+            <div className="w-[60px] max-sm:w-[40px] object-cover">
               <img className="w-full" src={logo} alt="Logo" />
             </div>
             <div>
-              <p className="text-4xl font-bold">go tour</p>
+              <p className="text-4xl font-bold max-sm:text-xl">go tour</p>
               <p className="text-xs font-semibold">business travel</p>
             </div>
           </div>
           <label htmlFor="menu-toggle">
-            <i className="fa-solid fa-bars-staggered cursor-pointer text-2xl"></i>
+            <i className="fa-solid fa-bars-staggered cursor-pointer text-2xl max-sm:text-xl"></i>
           </label>
         </div>
       </div>
 
-      <input type="checkbox" className="hidden" id="menu-toggle"></input>
+      <input type="checkbox" className="hidden" id="menu-toggle" />
       <div className="md:hidden fixed -left-full top-0 w-full h-dvh toggled-bar flex flex-col bg-white transition-all px-10 py-5 z-50">
         <div className="flex items-center border-b-4 pb-5 justify-between">
           <div
             className="flex items-center cursor-pointer"
             onClick={handleLogoClick}
           >
-            <div className="w-[60px] object-cover">
+            <div className="w-[60px] max-sm:w-[40px] object-cover">
               <img className="w-full" src={logo} alt="Logo" />
             </div>
             <div>
-              <p className="text-4xl font-bold">go tour</p>
+              <p className="text-4xl font-bold max-sm:text-xl">go tour</p>
               <p className="text-xs font-semibold">business travel</p>
             </div>
           </div>
-          <label htmlFor="menu-toggle">
+          <label htmlFor="menu-toggle" className="max-sm:text-xl">
             <i className="fa-solid fa-xmark text-2xl text-black cursor-pointer"></i>
           </label>
         </div>
