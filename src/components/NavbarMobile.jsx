@@ -1,7 +1,9 @@
 import PropTypes from 'prop-types'
 import { useState } from 'react'
+import { useTranslation } from 'react-i18next'
 
 export const NavbarMobile = ({ handleLogoClick, logo }) => {
+  const { t, i18n } = useTranslation()
   const [checked, setChecked] = useState(false)
 
   const handleToggle = () => {
@@ -9,6 +11,11 @@ export const NavbarMobile = ({ handleLogoClick, logo }) => {
   }
 
   const handleLinkClick = () => {
+    setChecked(false)
+  }
+
+  const changeLang = (lang) => {
+    i18n.changeLanguage(lang)
     setChecked(false)
   }
 
@@ -75,7 +82,7 @@ export const NavbarMobile = ({ handleLogoClick, logo }) => {
           <ul className="flex flex-col gap-5">
             <li>
               <a className="text-xl font-medium" onClick={handleLinkClick}>
-                Home
+                {t('home')}
               </a>
             </li>
             <li>
@@ -84,7 +91,7 @@ export const NavbarMobile = ({ handleLogoClick, logo }) => {
                 href="#about"
                 onClick={handleLinkClick}
               >
-                About
+                {t('about')}
               </a>
             </li>
             <li>
@@ -106,17 +113,26 @@ export const NavbarMobile = ({ handleLogoClick, logo }) => {
               </a>
             </li>
             <li>
-              <a className="text-xl font-medium" onClick={handleLinkClick}>
+              <a
+                className="text-xl font-medium"
+                onClick={() => changeLang('uz')}
+              >
                 UZ
               </a>
             </li>
             <li>
-              <a className="text-xl font-medium" onClick={handleLinkClick}>
+              <a
+                className="text-xl font-medium"
+                onClick={() => changeLang('en')}
+              >
                 ENG
               </a>
             </li>
             <li>
-              <a className="text-xl font-medium" onClick={handleLinkClick}>
+              <a
+                className="text-xl font-medium"
+                onClick={() => changeLang('ru')}
+              >
                 RU
               </a>
             </li>

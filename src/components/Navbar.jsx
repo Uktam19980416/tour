@@ -1,10 +1,12 @@
 import { useState, useEffect } from "react"
+import { useTranslation } from "react-i18next"
 import logo from "../images/mainLogo2.png"
 import './Loader.css'
 import { NavbarMobile } from "./NavbarMobile"
 
 export const Navbar = () => {
   const [loading, setLoading] = useState(true)
+  const { t, i18n } = useTranslation()
 
   useEffect(() => {
     const timer = setTimeout(() => {
@@ -48,30 +50,30 @@ export const Navbar = () => {
               <ul className="flex items-center gap-10">
                 <li className="list-none">
                   <a className="text-xl font-medium" onClick={handleLogoClick}>
-                    Home
+                    {t('home')}
                   </a>
                 </li>
                 <li className="list-none">
                   <a className="text-xl font-medium" href="#about">
-                    About
+                    {t("about")}
                   </a>
                 </li>
                 <li className="list-none">
                   <a className="text-xl font-medium" href="#tours">
-                    Tours
+                    {t("tours")}
                   </a>
                 </li>
                 <li className="list-none">
                   <a className="text-xl font-medium" href="#contacts">
-                    Contacts
+                    {t("contacts")}
                   </a>
                 </li>
               </ul>
             </nav>
             <div className="flex items-center gap-5">
-              <p className="text-xl font-medium cursor-pointer">UZ</p>
-              <p className="text-xl font-medium cursor-pointer">EN</p>
-              <p className="text-xl font-medium cursor-pointer">RU</p>
+              <p className="text-xl font-medium cursor-pointer"  onClick={() => i18n.changeLanguage('uz')}>UZ</p>
+              <p className="text-xl font-medium cursor-pointer"  onClick={() => i18n.changeLanguage('en')}>EN</p>
+              <p className="text-xl font-medium cursor-pointer"  onClick={() => i18n.changeLanguage('ru')}>RU</p>
               <div>
                 <i className="fa-brands fa-telegram text-xl font-medium cursor-pointer"></i>
               </div>
