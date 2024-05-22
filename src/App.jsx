@@ -20,8 +20,8 @@ function App() {
       <VisaSupport />
       <Explore />
       <Visit />
-      {/* <Locations /> */}
-      {/* <Reservation /> */}
+      <Locations />
+      <Reservation />
       {/* <Map /> */}
       {/* <Contact /> */}
       {/* <Booking /> */}

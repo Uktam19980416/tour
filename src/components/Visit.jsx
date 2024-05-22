@@ -17,7 +17,7 @@ export const Visit = () => {
         </p>
       </div>
 
-      <div className="flex gap-5 mt-10 max-md:flex-col">
+      <div className="flex gap-5 mt-10 max-lg:flex-col">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
@@ -72,7 +72,7 @@ export const Visit = () => {
         </div>
       </div>
 
-      <div className="flex gap-5 mt-10 max-md:flex-col">
+      <div className="flex gap-5 mt-10 max-lg:flex-col">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
@@ -124,7 +124,7 @@ export const Visit = () => {
         </div>
       </div>
 
-      <div className="flex gap-5 mt-10 max-md:flex-col">
+      <div className="flex gap-5 mt-10 max-lg:flex-col">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
@@ -178,7 +178,7 @@ export const Visit = () => {
         </div>
       </div>
 
-      <div className="flex gap-5 mt-10 max-md:flex-col">
+      <div className="flex gap-5 mt-10 max-lg:flex-col">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"

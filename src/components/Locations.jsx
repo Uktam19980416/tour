@@ -1,9 +1,9 @@
 export const Locations = () => {
   return (
-    <div className="container w-[1440px] max-w-4/5 mx-auto my-20">
-      <div className="text-center w-1/2 mx-auto flex flex-col gap-4">
-        <h1 className="text-4xl font-bold">Best Locations</h1>
-        <p className="text-xl text-slate-500 font-semibold">
+    <div className="container w-[1440px] max-w-4/5 mx-auto my-20 max-sm:px-2 max-sm:w-full ">
+      <div className="text-center w-1/2 max-lg:w-full mx-auto flex flex-col gap-4">
+        <h1 className="text-4xl font-bold max-md:text-2xl">Best Locations</h1>
+        <p className="text-xl text-slate-500 font-semibold max-md:text-sm">
           Discover the best offers in each city, curated just for you. Immerse
           yourself in a world of savings and indulge in unparalleled
           experiences.
