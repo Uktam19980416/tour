@@ -16,13 +16,13 @@ export const Booking = () => {
   return (
     <div className="relative">
       <div style={style}></div>
-      <div className="container relative w-[1440px] max-w-4/5 mx-auto py-28 z-10">
-        <div className="flex items-center justify-between">
-          <div>
-            <p className="text-5xl text-slate-200 font-bold">
+      <div className="container relative w-[1440px] max-w-4/5 mx-auto py-28 z-10 max-sm:px-2 max-sm:w-full">
+        <div className="flex items-center justify-between max-lg:flex-col">
+          <div className="text-center sm:mb-5 ">
+            <p className="text-5xl text-slate-200 font-bold max-md:text-3xl">
               ARE YOU LOOKING TO TRAVEL ?
             </p>
-            <p className="text-2xl text-slate-200 font-bold">
+            <p className="text-2xl text-slate-200 font-bold max-md:text-lg">
               Make A Reservation By Clicking The Button
             </p>
           </div>

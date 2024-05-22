@@ -24,8 +24,8 @@ function App() {
       <Reservation />
       <Map />
       <Contact />
-      {/* <Booking /> */}
-      {/* <Footer /> */}
+      <Booking />
+      <Footer />
     </>
   )
 }

@@ -11,28 +11,30 @@ export const Contact = () => {
       <form className="mt-10 flex flex-col gap-5">
         <div className="flex items-center justify-between max-sm:flex-col gap-5">
           <label htmlFor="name" className="block text-slate-600 text-xl w-full">
-            Your Name
+            Your Name <span className="text-orange-600">*</span>
             <input
               type="text"
               id="name"
               className="w-full p-3 mt-2 rounded-full bg-transparent border-2 border-solid border-slate-300 text-slate-900"
               placeholder="Enter your name"
+              required
             />
           </label>
           <label htmlFor="name" className="block text-slate-600 text-xl w-full">
-            Your Name
+            Your Surname <span className="text-orange-600">*</span>
             <input
               type="tel"
               id="name"
               className="w-full p-3 mt-2 rounded-full bg-transparent border-2 border-solid border-slate-300 text-slate-900"
               placeholder="+998 90 123 45 67"
+              required
             />
           </label>
         </div>
         <div className="flex items-center justify-between max-sm:flex-col gap-5">
           <label htmlFor="name" className="block text-slate-600 text-xl w-full">
-            Number Of Guests
-            <select className="border-2 border-solid border-slate-300 py-3 px-2 bg-transparent w-full rounded-full text-slate-900 text-xl">
+            Number Of Guests <span className="text-orange-600">*</span>
+            <select className="border-2 border-solid border-slate-300 py-3 px-2 bg-transparent w-full rounded-full text-slate-900 text-xl required">
               <option defaultValue={1} disabled>
                 Select...
               </option>
@@ -43,17 +45,18 @@ export const Contact = () => {
             </select>
           </label>
           <label htmlFor="name" className="block text-slate-600 text-xl w-full">
-            Check In Date
+            Check In Date <span className="text-orange-600">*</span>
             <input
               type="date"
               id="name"
               className="w-full p-3 mt-2 rounded-full bg-transparent border-2 border-solid border-slate-300 text-slate-900"
+              required
             />
           </label>
         </div>
         <div>
           <label htmlFor="name" className="block text-slate-600 text-xl w-full">
-            Choose Your Destination
+            Choose Your Destination <span className="text-orange-600">*</span>
             <select className="border-2 border-solid border-slate-300 py-3 px-2 bg-transparent w-full rounded-full text-slate-900 text-xl">
               <option defaultValue={1}>Select...</option>
               <option value="">Mekkah</option>
@@ -65,8 +68,11 @@ export const Contact = () => {
         </div>
         <div>
           <label htmlFor="name" className="block text-slate-600 text-xl w-full">
-            Choose Your Visa Support
-            <select className="border-2 border-solid border-slate-300 py-3 px-2 bg-transparent w-full rounded-full text-slate-900 text-xl">
+            Choose Your Visa Support <span className="text-orange-600">*</span>
+            <select
+              className="border-2 border-solid border-slate-300 py-3 px-2 bg-transparent w-full rounded-full text-slate-900 text-xl"
+              required
+            >
               <option defaultValue={1} disabled>
                 Select...
               </option>
@@ -81,6 +87,21 @@ export const Contact = () => {
           <Button text="Make Your Reservation Now" />
         </div>
       </form>
+
+      <div className="hidden max-lg:block mt-5">
+        <div className="flex justify-around items-center">
+          <p className="text-5xl cursor-pointer">
+            <a href="#">
+              <i className="fa-brands fa-telegram"></i>
+            </a>
+          </p>
+          <p className="text-5xl cursor-pointer">
+            <a href="#">
+              <i className="fa-brands fa-square-instagram"></i>
+            </a>
+          </p>
+        </div>
+      </div>
     </div>
   )
 }
