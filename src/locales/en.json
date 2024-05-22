@@ -1,0 +1,54 @@
+{
+  "home": "Home",
+  "about": "About",
+  "tours": "Tours",
+  "contacts": "Contacts",
+  "travelers": "TRAVELERS",
+  "city": {
+    "name": "Paris",
+    "country": "France"
+  },
+  "city2": {
+    "name": "Singapore"
+  },
+  "city3": {
+    "name": "Prague",
+    "country": "Czech Republic"
+  },
+  "city4": {
+    "name": "Amsterdam",
+    "country": "Netherlands"
+  },
+  "city5": {
+    "name": "Moscow",
+    "country": "Russia"
+  },
+  "readMore": "read more",
+
+  "offers": {
+    "title": "Best Weekly Offers In Each City",
+    "text": "Discover the best weekly offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.",
+    "card1": {
+      "imageAlt": "Italy, Rome",
+      "country": "Italy",
+      "checkIn": "Check Ins",
+      "person": "person",
+      "dealIncludes": "Deal Includes",
+      "daysTrip": "Days Trip > Hotel Included",
+      "airplaneBill": "Airplane Bill Included",
+      "dailyPlaces": "Daily Places To Visit",
+      "makeReservation": "Make a reservation"
+    },
+    "card2": {
+      "imageAlt": "Italy, Rome",
+      "country": "Italy",
+      "checkIn": "Check Ins",
+      "person": "person",
+      "dealIncludes": "Deal Includes",
+      "daysTrip": "Days Trip > Hotel Included",
+      "airplaneBill": "Airplane Bill Included",
+      "dailyPlaces": "Daily Places To Visit",
+      "makeReservation": "Make a reservation"
+    }
+  }
+}

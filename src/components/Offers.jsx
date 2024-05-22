@@ -5,9 +5,11 @@ import '@splidejs/splide/dist/css/splide.min.css'
 import italy from '../images/Italy.jpg'
 import logo from '../images/mainLogo.png'
 import { Button } from './Button'
+import { useTranslation } from 'react-i18next'
 
 export const Offers = () => {
   const splideRef = useRef(null)
+  const { t } = useTranslation()
 
   useEffect(() => {
     if (splideRef.current) {
@@ -38,10 +40,6 @@ export const Offers = () => {
   }, [])
 
   return (
-    // <div
-    //   className="container w-[1440px] max-w-4/5 mx-auto my-20"
-    //   id="tours"
-    // >
     <div
       className="container w-[1440px] max-w-4/5 max-sm:w-full mx-auto my-20 max-sm:px-2"
       id="tours"
@@ -51,12 +49,10 @@ export const Offers = () => {
         className="text-center w-1/2 max-md:w-full mx-auto flex flex-col gap-4"
       >
         <h1 className="text-4xl font-bold max-md:text-2xl">
-          Best Weekly Offers In Each City
+          {t('offers.title')}
         </h1>
         <p className="text-xl font-semibold max-md:text-sm">
-          Discover the best weekly offers in each city, curated just for you.
-          Immerse yourself in a world of savings and indulge in unparalleled
-          experiences.
+          {t('offers.text')}
         </p>
       </div>
       <div className="mt-10" data-aos="flip-up">
@@ -69,14 +65,14 @@ export const Offers = () => {
                     <img
                       className="w-full h-full object-cover rounded-l-[10%]"
                       src={italy}
-                      alt="offer"
+                      alt={t('offers.card1.imageAlt')}
                     />
                   </div>
                   <div className="p-5 flex flex-col gap-5 rounded-box border border-solid w-4/6 absolute top-10 left-32 z-50 bg-slate-50 ">
                     <div>
                       <div className="flex items-center justify-between">
                         <p className="text-2xl font-bold max-sm:text-lg">
-                          Italy
+                          {t('offers.card1.country')}
                         </p>
                         <p className="text-2xl font-bold text-slate-800 max-sm:text-lg">
                           $200
@@ -87,9 +83,11 @@ export const Offers = () => {
                           <span>
                             <i className="fa-solid fa-users"></i>
                           </span>
-                          200 Check Ins
+                          200 {t('offers.card1.checkIn')}
                         </p>
-                        <p className="text-slate-500 max-sm:text-xs">/person</p>
+                        <p className="text-slate-500 max-sm:text-xs">
+                          /{t('offers.card1.person')}
+                        </p>
                       </div>
                     </div>
                     <div>
@@ -97,30 +95,30 @@ export const Offers = () => {
                     </div>
                     <div>
                       <p className="text-xl font-bold max-sm:text-lg">
-                        Deal includes:
+                        {t('offers.card1.dealIncludes')}:
                       </p>
                       <ul className="list-none">
                         <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-car"></i>
                           </span>{' '}
-                          5 Days Trip {'>'} Hotel Included
+                          5 {t('offers.card1.daysTrip')}
                         </li>
                         <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-plane-departure"></i>
                           </span>{' '}
-                          Airplane Bill Included
+                          {t('offers.card1.airplaneBill')}
                         </li>
                         <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-hotel"></i>
                           </span>{' '}
-                          Daily Places Visit
+                          {t('offers.card1.dailyPlaces')}
                         </li>
                       </ul>
                     </div>
-                    <Button text="Make a reservation" />
+                    <Button text={t('offers.card1.makeReservation')} />
                   </div>
                 </div>
               </li>
@@ -130,14 +128,14 @@ export const Offers = () => {
                     <img
                       className="w-full h-full object-cover rounded-l-[10%]"
                       src={logo}
-                      alt="offer"
+                      alt={t('offers.card2.imageAlt')}
                     />
                   </div>
                   <div className="p-5 flex flex-col gap-5 rounded-box border border-solid w-4/6 absolute top-10 left-32 z-50 bg-slate-50 ">
                     <div>
                       <div className="flex items-center justify-between">
                         <p className="text-2xl font-bold max-sm:text-lg">
-                          Italy
+                          {t('offers.card2.country')}
                         </p>
                         <p className="text-2xl font-bold text-slate-800 max-sm:text-lg">
                           $200
@@ -148,9 +146,11 @@ export const Offers = () => {
                           <span>
                             <i className="fa-solid fa-users"></i>
                           </span>
-                          200 Check Ins
+                          200 {t('offers.card2.checkIn')}
                         </p>
-                        <p className="text-slate-500 max-sm:text-xs">/person</p>
+                        <p className="text-slate-500 max-sm:text-xs">
+                          /{t('offers.card2.person')}
+                        </p>
                       </div>
                     </div>
                     <div>
@@ -158,30 +158,30 @@ export const Offers = () => {
                     </div>
                     <div>
                       <p className="text-xl font-bold max-sm:text-lg">
-                        Deal includes:
+                        {t('offers.card2.dealIncludes')}:
                       </p>
                       <ul className="list-none">
                         <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-car"></i>
                           </span>{' '}
-                          5 Days Trip {'>'} Hotel Included
+                          5 {t('offers.card2.daysTrip')}
                         </li>
                         <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-plane-departure"></i>
                           </span>{' '}
-                          Airplane Bill Included
+                          {t('offers.card2.airplaneBill')}
                         </li>
                         <li className="text-slate-500 text-xl max-sm:text-xs">
                           <span>
                             <i className="fa-solid fa-hotel"></i>
                           </span>{' '}
-                          Daily Places Visit
+                          {t('offers.card2.dailyPlaces')}
                         </li>
                       </ul>
                     </div>
-                    <Button text="Make a reservation" />
+                    <Button text={t('offers.card2.makeReservation')} />
                   </div>
                 </div>
               </li>

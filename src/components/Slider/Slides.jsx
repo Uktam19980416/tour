@@ -1,28 +1,30 @@
 import Slider from './Slider'
+import { useTranslation } from 'react-i18next'
 function Slides() {
+  const { t } = useTranslation()
   const slides = [
     {
-      city: 'Paris',
-      country: 'France',
+      city: t('city.name'),
+      country: t('city.country'),
       img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/paris.jpg',
     },
     {
-      city: 'Singapore',
+      city: t('city2.name'),
       img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/singapore.jpg',
     },
     {
-      city: 'Prague',
-      country: 'Czech Republic',
+      city: t('city3.name'),
+      country: t('city3.country'),
       img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/prague.jpg',
     },
     {
-      city: 'Amsterdam',
-      country: 'Netherlands',
+      city: t('city4.name'),
+      country: t('city4.country'),
       img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/amsterdam.jpg',
     },
     {
-      city: 'Moscow',
-      country: 'Russia',
+      city: t('city5.name'),
+      country: t('city5.country'),
       img: 'https://s3-us-west-2.amazonaws.com/s.cdpn.io/142996/moscow.jpg',
     },
   ]

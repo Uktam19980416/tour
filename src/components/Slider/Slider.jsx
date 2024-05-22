@@ -1,4 +1,5 @@
 import React from 'react'
+import { withTranslation } from 'react-i18next'
 import classNames from 'classnames'
 import PropTypes from 'prop-types'
 import './Slider.css'
@@ -45,13 +46,17 @@ class CitiesSlider extends React.Component {
 
   render() {
     const { activeSlide, prevSlide, sliderReady } = this.state
+    // eslint-disable-next-line react/prop-types
+    const { t } = this.props;
     return (
       <div
         className={classNames('slider relative z-10', {
           's--ready': sliderReady,
         })}
       >
-        <p className="slider__top-heading max-sm:-translate-y-6">Travelers</p>
+        <p className="slider__top-heading max-sm:-translate-y-6">
+          {t('travelers')}
+        </p>
         <div className="slider__slides">
           {this.props.slides.map((slide, index) => (
             <div
@@ -70,7 +75,7 @@ class CitiesSlider extends React.Component {
                     <span key={i}>{l}</span>
                   ))}
                 </h2>
-                <p className="slider__slide-readmore text-xl">read more</p>
+                <p className="slider__slide-readmore text-xl">{t("readMore")}</p>
               </div>
               <div className="slider__slide-parts">
                 {[...Array(this.IMAGE_PARTS).keys()].map((i) => (
@@ -102,4 +107,4 @@ CitiesSlider.propTypes = {
   slides: PropTypes.array.isRequired,
 }
 
-export default CitiesSlider
+export default withTranslation()(CitiesSlider)

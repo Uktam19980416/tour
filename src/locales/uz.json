@@ -1,0 +1,54 @@
+{
+  "home": "Bosh sahifa",
+  "about": "Biz haqimizda",
+  "tours": "Turlar",
+  "contacts": "Kontaktlar",
+  "travelers": "SAYOHATCHILAR",
+  "city": {
+    "name": "Parij",
+    "country": "Fransiya"
+  },
+  "city2": {
+    "name": "Singapur"
+  },
+  "city3": {
+    "name": "Praga",
+    "country": "Chex Respublikasi"
+  },
+  "city4": {
+    "name": "Amsterdam",
+    "country": "Niderlandiya"
+  },
+  "city5": {
+    "name": "Moskva",
+    "country": "Rossiya"
+  },
+  "readMore": "ko'proq o'qish",
+
+  "offers": {
+    "title": "Har bir shaharda haftalik eng yaxshi takliflar",
+    "text": "Har bir shaharda faqat siz uchun tuzilgan eng yaxshi haftalik takliflarni kashf eting. O'zingizni tejash dunyosiga sho'ng'ing va mislsiz tajribalarga ega bo'ling.",
+    "card1": {
+      "imageAlt": "Italiya, Rim",
+      "country": "Italiya",
+      "checkIn": "Ro'yxatdan o'tish",
+      "person": "odam",
+      "dealIncludes": "Shartnoma o'z ichiga oladi",
+      "daysTrip": "Kunlik sayohat > Mehmonxona kiradi",
+      "airplaneBill": "Samolyot Bill kiritilgan",
+      "dailyPlaces": "Har kuni tashrif buyuradigan joylar",
+      "makeReservation": "Bron qiling"
+    },
+    "card2": {
+      "imageAlt": "Italiya, Rim",
+      "country": "Italiya",
+      "checkIn": "Ro'yxatdan o'tish",
+      "person": "odam",
+      "dealIncludes": "Shartnoma o'z ichiga oladi",
+      "daysTrip": "Kunlik sayohat > Mehmonxona kiradi",
+      "airplaneBill": "Samolyot Bill kiritilgan",
+      "dailyPlaces": "Har kuni tashrif buyuradigan joylar",
+      "makeReservation": "Bron qiling"
+    }
+  }
+}
