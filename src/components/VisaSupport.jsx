@@ -52,7 +52,7 @@ export const VisaSupport = () => {
             smooth journey.
           </p>
         </div>
-        <div className="mt-10" data-aos="flip-up">
+        <div className="mt-10">
           <div className="splide" ref={splideRef}>
             <div className="splide__track">
               <ul className="splide__list">
