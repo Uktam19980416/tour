@@ -50,5 +50,155 @@
       "dailyPlaces": "Har kuni tashrif buyuradigan joylar",
       "makeReservation": "Bron qiling"
     }
+  },
+
+  "visa": {
+    "imageAlt": "Italiya",
+    "title": "Viza Yordami",
+    "text": "Bizning ekspert viza yordami bilan stresssiz sayohatni boshdan kechiring. Biz uzluksiz yordam va to'liq yo'l-yo'riq beramiz, shunda sayohatingiz muammosiz o'tadi.",
+    "card1": {
+      "imageAlt": "Italiya, Rim",
+      "country": "Italiya",
+      "checkIn": "Ro'yxatdan o'tish",
+      "person": "kishi",
+      "dealIncludes": "Taklifga kiradi",
+      "prices": "Eng yaxshi narxlar",
+      "processingTime": "Qisqa ishlov berish vaqti",
+      "assistance": "Ishonchli yordam",
+      "makeReservation": "Bron qilish"
+    },
+    "card2": {
+      "imageAlt": "Italiya, Rim",
+      "country": "Italiya",
+      "checkIn": "Ro'yxatdan o'tish",
+      "person": "kishi",
+      "dealIncludes": "Taklifga kiradi",
+      "prices": "Eng yaxshi narxlar",
+      "processingTime": "Qisqa ishlov berish vaqti",
+      "assistance": "Ishonchli yordam",
+      "makeReservation": "Bron qilish"
+    }
+  },
+
+  "explore": {
+    "title": "Manzillarni osonlik bilan o'rganing",
+    "text": "Har bir shaharda temir yo'l va samolyot chiptalari bo'yicha eng yaxshi takliflarni toping, siz uchun ehtiyotkorlik bilan tanlangan.",
+    "card1": {
+      "imageAlt": "Temir yo'l",
+      "title": "Arzon temir yo'l chiptalari bizda",
+      "subText": "Butun dunyo",
+      "exploreMore": "Batafsil",
+      "text": "Temir yo'l sarguzashtiga chiqing va butun dunyo bo'ylab manzillarni o'rganing. Qanday bo'lmasin, bu manzarali landshaftlar, gavjum shaharlar yoki madaniy durdonalar bo'lsin, bizning temir yo'l xizmatlarimiz dunyo bo'ylab sayohat qilishning noyob va qulay usulini taklif etadi. Turli madaniyatlarning go'zalligiga sho'ng'in, barchasi bizning keng temir yo'l tarmog'imiz orqali mavjud."
+    },
+    "card2": {
+      "imageAlt": "Samolyot",
+      "title": "Qiziqarli aviabiletlari bilan tanishing",
+      "subText": "Butun dunyo",
+      "exploreMore": "Batafsil",
+      "text": "Havoda sarguzashtga chiqing va butun dunyo bo'ylab manzillarni o'rganing. Qanday bo'lmasin, bu hayratomuz landshaftlar, yorqin shaharlar yoki madaniy xazinalar bo'lsin, bizning aviakompaniyalarimiz dunyo bo'ylab sayohat qilishning qulay va hayajonli usulini taqdim etadi. Turli madaniyatlarning boyligiga sho'ng'in, barchasi bizning keng aviayo'l tarmog'imiz orqali osonlik bilan mavjud."
+    }
+  },
+
+  "visit": {
+    "title": "Bizning mamlakatlardan birini hozir ziyorat qiling",
+    "text": "Har bir shahardagi eng yaxshi takliflarni o'zingiz uchun maxsus tanlang. Tejash dunyosiga sho'ng'ing va tengsiz tajribalar bilan rohatlaning.",
+    "card1": {
+      "imageAlt": "Dubay",
+      "title": "Dubay",
+      "subText": "Birlashgan Arab Amirliklari",
+      "exploreMore": "Batafsil ma'lumot",
+      "text": "Dubay — Birlashgan Arab Amirliklaridagi shahar va amirlik bo'lib, hashamatli xaridlar, ultrazamoq arxitektura va jonli tungi hayoti bilan mashhur. 830 metr balandlikdagi Burj Xalifa osmono'par binolari bilan to'lgan shahar manzarasida hukmronlik qiladi. Uning tagida musiqa bilan uyg'unlashgan chiroqlar bilan Dubay favvorasi joylashgan. Sohildan sal narida joylashgan sun'iy orollarda Atlantis, The Palm — suv va dengiz hayvonlari parklari bo'lgan kurort joylashgan.",
+      "population": "8.66 mln odam",
+      "area": "41.290 km²",
+      "price": "$1.100.200",
+      "directions": "Yo'nalishlar kerakmi?"
+    },
+    "card2": {
+      "imageAlt": "Antalya",
+      "title": "Antalya",
+      "subText": "Turkiya",
+      "exploreMore": "Batafsil ma'lumot",
+      "text": "Antalya — Turkiyaning eng tez o'sayotgan shahri va dunyoning turli burchaklaridan kelgan sayyohlar uning ajoyib plyajlari va an'anaviy turk madaniyati aralashmasini kashf qilmoqdalar. Bolalar Beach Parkni yaxshi ko'radilar, bu yerda Aqua Land (suv slaydlari ixlosmandlari uchun orzu) va Dolphin Land (delfinlar, dengiz sherlar va oq kitlar uyi) joylashgan. Eski shahar markazini o'rganishni va Adrian darvozasini ko'rishni unutmang.",
+      "population": "44.48 mln odam",
+      "area": "275.400 km²",
+      "price": "$946.000",
+      "directions": "Yo'nalishlar kerakmi?"
+    },
+    "card3": {
+      "imageAlt": "Sharm-al-Shayx",
+      "title": "Sharm-al-Shayx",
+      "subText": "Misr",
+      "exploreMore": "Batafsil ma'lumot",
+      "text": "Sharm El Shayx — Sinay yarim orolining turizm markazi va bu yerda dunyodagi eng yaxshi sho'ng'in joylari mavjud. Ayniqsa, Ras Mohammed milliy bog'ining suv osti mo'jizalari Sharm shahrini butunlay boshqa darajaga olib chiqdi. Shahar suzish va kema qoldiqlari bilan shug'ullanadigan joylarga ega bo'lib, ular butun dunyodan kelgan tajribali va havaskor suzuvchilarni Qizil dengizning chuqurliklarida tengsiz dengiz hayotini kashf qilish uchun jalb qiladi.",
+      "population": "67.41 mln odam",
+      "area": "551.500 km²",
+      "price": "$425.600",
+      "directions": "Yo'nalishlar kerakmi?"
+    },
+    "card4": {
+      "imageAlt": "Istanbul",
+      "title": "Istanbul",
+      "subText": "Turkiya",
+      "exploreMore": "Batafsil ma'lumot",
+      "text": "Istanbul — Turkiyaning eng ko'p aholi yashaydigan shahri va uning madaniy, iqtisodiy va tarixiy markazi. U Turkiyaning shimoli-g'arbiy qismida joylashgan, Bosfor bo'g'ozi tomonidan Yevropa va Osiyo tomonlariga bo'lingan, u Marmara dengizi va Qora dengizni bog'laydi. Bu dunyodagi yagona shahar bo'lib, ikki qit'ada joylashgan.",
+      "population": "67.41 mln odam",
+      "area": "551.500 km²",
+      "price": "$425.600",
+      "directions": "Yo'nalishlar kerakmi?"
+    }
+  },
+
+  "locations": {
+    "title": "Eng Yaxshi Joylar",
+    "text": "Har bir shahardagi eng yaxshi takliflarni o'zingiz uchun maxsus tanlang. Tejash dunyosiga sho'ng'ing va tengsiz tajribalar bilan rohatlaning."
+  },
+
+  "reservation": {
+    "title": "Bu yerda tanlangan taklifni bron qiling",
+    "subtitle": "Bron qilishni amalga oshiring",
+    "buttonText": "Ko'proq bilib oling",
+    "phone": {
+      "title": "Telefon orqali qo'ng'iroq qiling",
+      "number": "+998 99 299 99 96"
+    },
+    "email": {
+      "title": "Email orqali biz bilan bog'laning",
+      "address": "gotour@gmail.com"
+    },
+    "location": {
+      "title": "Bizning ofislarimizga tashrif buyuring",
+      "address": "Toshkent shahar"
+    }
+  },
+
+  "contact": {
+    "form": {
+      "title": "O'z",
+      "subtitle": "Buyurtmangizni Ushbu Form orqali qiling",
+      "name": "Ismingiz",
+      "namePlaceholder": "Ismingizni kiriting",
+      "surname": "Familiyangiz",
+      "guests": "Mehmonlar Soni",
+      "select": "Tanlang...",
+      "checkIn": "Kirish Sanasi",
+      "destination": "Manzilingizni Tanlang",
+      "visaSupport": "Visa Qo'llab-quvvatlashni Tanlang",
+      "saudiArabia": "Saudiya Arabistoni",
+      "europe": "Yevropa",
+      "turkey": "Turkiya",
+      "china": "Xitoy",
+      "submit": "Hozir Buyurtma Qiling"
+    }
+  },
+
+  "booking": {
+    "title": "SAFAR QILMOQCHIMISIZ?",
+    "subtitle": "Tugmani bosish orqali buyurtma qiling",
+    "bookingBtn": "Hozir buyurtma qiling"
+  },
+
+  "footer": {
+    "copyright": "Mualliflik huquqi © {{year}}",
+    "allRightsReserved": "Barcha huquqlar himoyalangan."
   }
 }

@@ -5,9 +5,11 @@ import '@splidejs/splide/dist/css/splide.min.css'
 import italy from '../images/Italy.jpg'
 import logo from '../images/mainLogo.png'
 import { Button } from './Button'
+import { useTranslation } from 'react-i18next'
 
 export const VisaSupport = () => {
   const splideRef = useRef(null)
+  const { t } = useTranslation()
 
   useEffect(() => {
     if (splideRef.current) {
@@ -39,17 +41,16 @@ export const VisaSupport = () => {
 
   return (
     <>
-      {/* <div className="container w-[1440px] max-w-4/5 mx-auto my-20"> */}
       <div className="container w-[1440px] max-w-4/5 max-sm:w-full mx-auto my-20 max-sm:px-2">
         <div
           className="text-center w-1/2 max-md:w-full mx-auto flex flex-col gap-4"
           data-aos="zoom-in"
         >
-          <h1 className="text-4xl font-bold max-md:text-2xl">Visa Support</h1>
+          <h1 className="text-4xl font-bold max-md:text-2xl">
+            {t('visa.title')}
+          </h1>
           <p className="text-xl font-semibold max-md:text-sm">
-            Experience stress-free travel with our expert visa support. We
-            provide seamless assistance and comprehensive guidance, ensuring a
-            smooth journey.
+            {t('visa.text')}
           </p>
         </div>
         <div className="mt-10">
@@ -57,82 +58,19 @@ export const VisaSupport = () => {
             <div className="splide__track">
               <ul className="splide__list">
                 <li className="splide__slide">
-                  <div className="relative">
-                    <div className="w-4/6 h-[250px]">
-                      <img
-                        className="w-full h-full object-cover rounded-l-[10%]"
-                        src={italy}
-                        alt="offer"
-                      />
-                    </div>
-                    <div className="p-5 flex flex-col gap-5 rounded-box border border-solid w-4/6 absolute top-10 left-32 z-50 bg-slate-50 ">
-                      <div>
-                        <div className="flex items-center justify-between">
-                          <p className="text-2xl font-bold max-sm:text-lg">
-                            Italy
-                          </p>
-                          <p className="text-2xl font-bold text-slate-800 max-sm:text-lg">
-                            $200
-                          </p>
-                        </div>
-                        <div className="flex items-center justify-between">
-                          <p className="text-slate-500 max-sm:text-xs">
-                            <span>
-                              <i className="fa-solid fa-users"></i>
-                            </span>
-                            200 Check Ins
-                          </p>
-                          <p className="text-slate-500 max-sm:text-xs">
-                            /person
-                          </p>
-                        </div>
-                      </div>
-                      <div>
-                        <hr />
-                      </div>
-                      <div>
-                        <p className="text-xl font-bold max-sm:text-lg">
-                          Deal includes:
-                        </p>
-                        <ul className="list-none">
-                          <li className="text-slate-500 text-xl max-sm:text-xs">
-                            <span>
-                              <i className="fa-solid fa-bookmark"></i>
-                            </span>{' '}
-                            Best Prices
-                          </li>
-                          <li className="text-slate-500 text-xl max-sm:text-xs">
-                            <span>
-                              <i className="fa-solid fa-clock"></i>
-                            </span>{' '}
-                            Short Processing Time
-                          </li>
-                          <li className="text-slate-500 text-xl max-sm:text-xs">
-                            <span>
-                              <i className="fa-solid fa-check"></i>
-                            </span>{' '}
-                            Trustworthy Assistance
-                          </li>
-                        </ul>
-                      </div>
-                      <Button text="Make a reservation" />
-                    </div>
-                  </div>
-                </li>
-                <li className="splide__slide">
                   <div className="relative h-[400px]">
                     <div className="w-4/6 h-[250px]">
                       <img
                         className="w-full h-full object-cover rounded-l-[10%]"
-                        src={logo}
-                        alt="offer"
+                        src={italy}
+                        alt={t('visa.card1.imageAlt')}
                       />
                     </div>
                     <div className="p-5 flex flex-col gap-5 rounded-box border border-solid w-4/6 absolute top-10 left-32 z-50 bg-slate-50 ">
                       <div>
                         <div className="flex items-center justify-between">
                           <p className="text-2xl font-bold max-sm:text-lg">
-                            Italy
+                            {t('visa.card1.country')}
                           </p>
                           <p className="text-2xl font-bold text-slate-800 max-sm:text-lg">
                             $200
@@ -143,10 +81,10 @@ export const VisaSupport = () => {
                             <span>
                               <i className="fa-solid fa-users"></i>
                             </span>
-                            200 Check Ins
+                            200 {t('visa.card1.checkIn')}
                           </p>
                           <p className="text-slate-500 max-sm:text-xs">
-                            /person
+                            /{t('visa.card1.person')}
                           </p>
                         </div>
                       </div>
@@ -155,30 +93,93 @@ export const VisaSupport = () => {
                       </div>
                       <div>
                         <p className="text-xl font-bold max-sm:text-lg">
-                          Deal includes:
+                          {t('visa.card1.dealIncludes')}:
                         </p>
                         <ul className="list-none">
                           <li className="text-slate-500 text-xl max-sm:text-xs">
                             <span>
                               <i className="fa-solid fa-bookmark"></i>
                             </span>{' '}
-                            Best Prices
+                            {t('visa.card1.prices')}
                           </li>
                           <li className="text-slate-500 text-xl max-sm:text-xs">
                             <span>
                               <i className="fa-solid fa-clock"></i>
                             </span>{' '}
-                            Short Processing Time
+                            {t('visa.card1.processingTime')}
                           </li>
                           <li className="text-slate-500 text-xl max-sm:text-xs">
                             <span>
                               <i className="fa-solid fa-check"></i>
                             </span>{' '}
-                            Trustworthy Assistance
+                            {t('visa.card1.assistance')}
                           </li>
                         </ul>
                       </div>
-                      <Button text="Make a reservation" />
+                      <Button text={t('visa.card1.makeReservation')} />
+                    </div>
+                  </div>
+                </li>
+                <li className="splide__slide">
+                  <div className="relative">
+                    <div className="w-4/6 h-[250px]">
+                      <img
+                        className="w-full h-full object-cover rounded-l-[10%]"
+                        src={logo}
+                        alt={t('visa.card2.imageAlt')}
+                      />
+                    </div>
+                    <div className="p-5 flex flex-col gap-5 rounded-box border border-solid w-4/6 absolute top-10 left-32 z-50 bg-slate-50 ">
+                      <div>
+                        <div className="flex items-center justify-between">
+                          <p className="text-2xl font-bold max-sm:text-lg">
+                            {t('visa.card1.country')}
+                          </p>
+                          <p className="text-2xl font-bold text-slate-800 max-sm:text-lg">
+                            $200
+                          </p>
+                        </div>
+                        <div className="flex items-center justify-between">
+                          <p className="text-slate-500 max-sm:text-xs">
+                            <span>
+                              <i className="fa-solid fa-users"></i>
+                            </span>
+                            200 {t('visa.card1.checkIn')}
+                          </p>
+                          <p className="text-slate-500 max-sm:text-xs">
+                            /{t('visa.card1.person')}
+                          </p>
+                        </div>
+                      </div>
+                      <div>
+                        <hr />
+                      </div>
+                      <div>
+                        <p className="text-xl font-bold max-sm:text-lg">
+                          {t('visa.card1.dealIncludes')}:
+                        </p>
+                        <ul className="list-none">
+                          <li className="text-slate-500 text-xl max-sm:text-xs">
+                            <span>
+                              <i className="fa-solid fa-bookmark"></i>
+                            </span>{' '}
+                            {t('visa.card1.prices')}
+                          </li>
+                          <li className="text-slate-500 text-xl max-sm:text-xs">
+                            <span>
+                              <i className="fa-solid fa-clock"></i>
+                            </span>{' '}
+                            {t('visa.card1.processingTime')}
+                          </li>
+                          <li className="text-slate-500 text-xl max-sm:text-xs">
+                            <span>
+                              <i className="fa-solid fa-check"></i>
+                            </span>{' '}
+                            {t('visa.card1.assistance')}
+                          </li>
+                        </ul>
+                      </div>
+                      <Button text={t('visa.card2.makeReservation')} />
                     </div>
                   </div>
                 </li>

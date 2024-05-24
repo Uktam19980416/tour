@@ -1,15 +1,15 @@
+import { useTranslation } from 'react-i18next'
 export const Locations = () => {
+  const { t } = useTranslation()
   return (
     <div className="container w-[1440px] max-w-4/5 mx-auto my-20 max-sm:px-2 max-sm:w-full ">
       <div
         className="text-center w-1/2 max-lg:w-full mx-auto flex flex-col gap-4"
         data-aos="zoom-in"
       >
-        <h1 className="text-4xl font-bold max-md:text-2xl">Best Locations</h1>
+        <h1 className="text-4xl font-bold max-md:text-2xl">{t("locations.title")}</h1>
         <p className="text-xl text-slate-500 font-semibold max-md:text-sm">
-          Discover the best offers in each city, curated just for you. Immerse
-          yourself in a world of savings and indulge in unparalleled
-          experiences.
+          {t("locations.text")}
         </p>
       </div>
       <div

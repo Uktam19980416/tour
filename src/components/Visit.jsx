@@ -3,7 +3,10 @@ import dubai from '../images/dubai.jpg'
 import antalya from '../images/antalya.jpg'
 import sheikh from '../images/sheikh.jpg'
 import turkey from '../images/turkey.jpg'
+import { useTranslation } from 'react-i18next'
+
 export const Visit = () => {
+  const { t } = useTranslation()
   return (
     <div className="container w-[1440px] max-sm:w-full max-sm:px-2 max-w-4/5 mx-auto my-20">
       <div
@@ -11,222 +14,212 @@ export const Visit = () => {
         data-aos="fade-left"
       >
         <h1 className="text-4xl font-bold max-md:text-2xl">
-          Visit One Of Our Countries Now
+          {t('visit.title')}
         </h1>
         <p className="text-xl text-slate-500 font-semibold max-md:text-sm">
-          Discover the best offers in each city, curated just for you. Immerse
-          yourself in a world of savings and indulge in unparalleled
-          experiences.
+          {t('visit.text')}
         </p>
       </div>
 
-      <div className="flex gap-5 mt-10 max-lg:flex-col"data-aos="fade-left">
+      <div className="flex gap-5 mt-10 max-lg:flex-col" data-aos="fade-left">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
             src={dubai}
-            alt="Railway"
-          />
-        </div>
-        <div className="flex flex-col gap-5">
-          <div className="flex items-center justify-between max-sm:flex-col">
-            <div>
-              <p className="text-3xl font-bold max-sm:text-2xl">Dubai</p>
-              <p className="text-lg text-slate-500 max-sm:text-sm">
-                United Arab Emirated
-              </p>
-            </div>
-            <Button text="Explore More" />
-          </div>
-          <p className="text-xl leading-10 text-slate-500 max-sm:text-sm max-sm:text-center">
-            Dubai is a city and emirate in the United Arab Emirates known for
-            luxury shopping, ultramodern architecture and a lively nightlife
-            scene. Burj Khalifa, an 830m-tall tower, dominates the
-            skyscraper-filled skyline. At its foot lies Dubai Fountain, with
-            jets and lights choreographed to music. On artificial islands just
-            offshore is Atlantis, The Palm, a resort with water and
-            marine-animal parks.
-          </p>
-          <div className="flex items-center justify-between">
-            <p className="text-xl text-slate-500 max-sm:text-xs">
-              <span>
-                <i className="fa-solid fa-user"></i>
-              </span>
-              &nbsp; 8.66 Mil People
-            </p>
-            <p className="text-xl text-slate-500 max-sm:text-xs">
-              <span>
-                <i className="fa-solid fa-globe"></i>
-              </span>
-              &nbsp; 41.290 km2
-            </p>
-            <p className="text-xl text-slate-500 max-sm:text-xs">
-              <span>
-                <i className="fa-solid fa-house"></i>
-              </span>
-              &nbsp; $1.100.200
-            </p>
-          </div>
-          <div className="cursor-pointer w-fit">
-            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all max-sm:text-lg">
-              Need directions? <span>&#8594;</span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex gap-5 mt-10 max-lg:flex-col"data-aos="fade-right">
-        <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
-          <img
-            className="w-full h-full rounded-badge"
-            src={antalya}
-            alt="Railway"
-          />
-        </div>
-        <div className="flex flex-col gap-5">
-          <div className="flex items-center justify-between max-sm:flex-col">
-            <div>
-              <p className="text-3xl font-bold max-sm:text-2xl">Antalya</p>
-              <p className="text-lg text-slate-500 max-sm:text-sm">Turkey</p>
-            </div>
-            <Button text="Explore More" />
-          </div>
-          <p className="text-xl leading-10 text-slate-500 max-sm:text-sm max-sm:text-center">
-            Antalya is the fastest-growing city in Turkey, and tourists from
-            around the world are discovering its fabulous mix of great beaches
-            and traditional Turkish culture. Kids will love the Beach Park,
-            which features Aqua Land (a waterslide-fanatics dream) and Dolphin
-            Land (home to dolphins, sea lions and white whales). Make sure to
-            explore the old town center and to see Hadrians Gate.
-          </p>
-          <div className="flex items-center justify-between">
-            <p className="text-xl text-slate-500 max-sm:text-xs">
-              <span>
-                <i className="fa-solid fa-user"></i>
-              </span>
-              &nbsp; 44.48 Mil People
-            </p>
-            <p className="text-xl text-slate-500 max-sm:text-xs">
-              <span>
-                <i className="fa-solid fa-globe"></i>
-              </span>
-              &nbsp; 275.400 km2
-            </p>
-            <p className="text-xl text-slate-500 max-sm:text-xs">
-              <span>
-                <i className="fa-solid fa-house"></i>
-              </span>
-              &nbsp; $946.000
-            </p>
-          </div>
-          <div className="cursor-pointer w-fit">
-            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all max-sm:text-lg">
-              Need directions? <span>&#8594;</span>
-            </p>
-          </div>
-        </div>
-      </div>
-
-      <div className="flex gap-5 mt-10 max-lg:flex-col"data-aos="fade-left">
-        <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
-          <img
-            className="w-full h-full rounded-badge"
-            src={sheikh}
-            alt="Railway"
+            alt={t('visit.card1.imageAlt')}
           />
         </div>
         <div className="flex flex-col gap-5">
           <div className="flex items-center justify-between max-sm:flex-col">
             <div>
               <p className="text-3xl font-bold max-sm:text-2xl">
-                Sharm El-Sheikh
+                {t('visit.card1.title')}
               </p>
-              <p className="text-lg text-slate-500 max-sm:text-sm">Egypt</p>
+              <p className="text-lg text-slate-500 max-sm:text-sm">
+                {t('visit.card1.subText')}
+              </p>
             </div>
-            <Button text="Explore More" />
+            <Button text={t('visit.card1.exploreMore')} />
           </div>
           <p className="text-xl leading-10 text-slate-500 max-sm:text-sm max-sm:text-center">
-            Sharm El Sheikh is the center of tourism action in Sinai Peninsula
-            and it has the world top diving sites. Specially the underwater
-            wonders of Ras Mohammed national park that took Sharm city to whole
-            different level. The city has diving and shipwreck sites that
-            attract both advanced and recreational divers from around the world
-            to discover the un parallel marine life deep down the red sea.
+            {t('visit.card1.text')}
           </p>
           <div className="flex items-center justify-between">
             <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-user"></i>
               </span>
-              &nbsp; 67.41 Mil People
+              &nbsp; {t('visit.card1.population')}
             </p>
             <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-globe"></i>
               </span>
-              &nbsp; 551.500 km2
+              &nbsp; {t('visit.card1.area')}
             </p>
             <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-house"></i>
               </span>
-              &nbsp; $425.600
+              &nbsp; {t('visit.card1.price')}
             </p>
           </div>
           <div className="cursor-pointer w-fit">
             <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all max-sm:text-lg">
-              Need directions? <span>&#8594;</span>
+              {t('visit.card1.directions')} <span>&#8594;</span>
             </p>
           </div>
         </div>
       </div>
 
-      <div className="flex gap-5 mt-10 max-lg:flex-col"data-aos="fade-right">
+      <div className="flex gap-5 mt-10 max-lg:flex-col" data-aos="fade-right">
         <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
           <img
             className="w-full h-full rounded-badge"
-            src={turkey}
-            alt="Railway"
+            src={antalya}
+            alt={t('visit.card2.imageAlt')}
           />
         </div>
         <div className="flex flex-col gap-5">
           <div className="flex items-center justify-between max-sm:flex-col">
             <div>
-              <p className="text-3xl font-bold max-sm:text-2xl">Istanbul</p>
-              <p className="text-lg text-slate-500 max-sm:text-sm">Turkey</p>
+              <p className="text-3xl font-bold max-sm:text-2xl">
+                {t('visit.card2.title')}
+              </p>
+              <p className="text-lg text-slate-500 max-sm:text-sm">
+                {t('visit.card2.subText')}
+              </p>
             </div>
-            <Button text="Explore More" />
+            <Button text={t('visit.card2.exploreMore')} />
           </div>
           <p className="text-xl leading-10 text-slate-500 max-sm:text-sm max-sm:text-center">
-            Istanbul is the most populous city in Turkey and its cultural,
-            economic and historic center. It is located in north-western part of
-            Turkey, divided into European and Asian side by Bosphorus, which
-            connects the Sea of Marmara and Black Sea. It is the only city in
-            the world that sits on two continents.
+            {t('visit.card2.text')}
           </p>
           <div className="flex items-center justify-between">
             <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-user"></i>
               </span>
-              &nbsp; 67.41 Mil People
+              &nbsp; {t('visit.card2.population')}
             </p>
             <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-globe"></i>
               </span>
-              &nbsp; 551.500 km2
+              &nbsp; {t('visit.card2.area')}
             </p>
             <p className="text-xl text-slate-500 max-sm:text-xs">
               <span>
                 <i className="fa-solid fa-house"></i>
               </span>
-              &nbsp; $425.600
+              &nbsp; {t('visit.card2.price')}
             </p>
           </div>
           <div className="cursor-pointer w-fit">
             <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all max-sm:text-lg">
-              Need directions? <span>&#8594;</span>
+              {t('visit.card2.directions')} <span>&#8594;</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex gap-5 mt-10 max-lg:flex-col" data-aos="fade-left">
+        <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
+          <img
+            className="w-full h-full rounded-badge"
+            src={sheikh}
+            alt={t('visit.card3.imageAlt')}
+          />
+        </div>
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center justify-between max-sm:flex-col">
+            <div>
+              <p className="text-3xl font-bold max-sm:text-2xl">
+                {t('visit.card3.title')}
+              </p>
+              <p className="text-lg text-slate-500 max-sm:text-sm">
+                {t('visit.card3.subText')}
+              </p>
+            </div>
+            <Button text={t('visit.card3.exploreMore')} />
+          </div>
+          <p className="text-xl leading-10 text-slate-500 max-sm:text-sm max-sm:text-center">
+            {t('visit.card3.text')}
+          </p>
+          <div className="flex items-center justify-between">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
+              <span>
+                <i className="fa-solid fa-user"></i>
+              </span>
+              &nbsp; {t('visit.card3.population')}
+            </p>
+            <p className="text-xl text-slate-500 max-sm:text-xs">
+              <span>
+                <i className="fa-solid fa-globe"></i>
+              </span>
+              &nbsp; {t('visit.card3.area')}
+            </p>
+            <p className="text-xl text-slate-500 max-sm:text-xs">
+              <span>
+                <i className="fa-solid fa-house"></i>
+              </span>
+              &nbsp; {t('visit.card3.price')}
+            </p>
+          </div>
+          <div className="cursor-pointer w-fit">
+            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all max-sm:text-lg">
+              {t('visit.card3.directions')} <span>&#8594;</span>
+            </p>
+          </div>
+        </div>
+      </div>
+
+      <div className="flex gap-5 mt-10 max-lg:flex-col" data-aos="fade-right">
+        <div className="w-4/5 h-[300px] max-sm:w-full object-cover">
+          <img
+            className="w-full h-full rounded-badge"
+            src={turkey}
+            alt={t('visit.card4.imageAlt')}
+          />
+        </div>
+        <div className="flex flex-col gap-5">
+          <div className="flex items-center justify-between max-sm:flex-col">
+            <div>
+              <p className="text-3xl font-bold max-sm:text-2xl">
+                {t('visit.card4.title')}
+              </p>
+              <p className="text-lg text-slate-500 max-sm:text-sm">
+                {t('visit.card4.subText')}
+              </p>
+            </div>
+            <Button text={t('visit.card4.exploreMore')} />
+          </div>
+          <p className="text-xl leading-10 text-slate-500 max-sm:text-sm max-sm:text-center">
+            {t('visit.card4.text')}
+          </p>
+          <div className="flex items-center justify-between">
+            <p className="text-xl text-slate-500 max-sm:text-xs">
+              <span>
+                <i className="fa-solid fa-user"></i>
+              </span>
+              &nbsp; {t('visit.card4.population')}
+            </p>
+            <p className="text-xl text-slate-500 max-sm:text-xs">
+              <span>
+                <i className="fa-solid fa-globe"></i>
+              </span>
+              &nbsp; {t('visit.card4.area')}
+            </p>
+            <p className="text-xl text-slate-500 max-sm:text-xs">
+              <span>
+                <i className="fa-solid fa-house"></i>
+              </span>
+              &nbsp; {t('visit.card4.price')}
+            </p>
+          </div>
+          <div className="cursor-pointer w-fit">
+            <p className="text-xl font-semibold text-slate-700 hover:translate-x-2 hover:ease-in hover:transition-all max-sm:text-lg">
+              {t('visit.card4.directions')} <span>&#8594;</span>
             </p>
           </div>
         </div>

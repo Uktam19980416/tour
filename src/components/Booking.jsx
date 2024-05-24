@@ -1,7 +1,9 @@
 import { Button } from './Button'
 import island from '../images/island.jpg'
+import { useTranslation } from 'react-i18next'
 
 export const Booking = () => {
+  const { t } = useTranslation()
   const style = {
     background: `url(${island}) no-repeat center center/cover`,
     filter: 'contrast(10%)',
@@ -10,7 +12,7 @@ export const Booking = () => {
     left: 0,
     width: '100%',
     height: '100%',
-    zIndex: -1, // Ensure background is behind content
+    zIndex: -1,
   }
 
   return (
@@ -23,13 +25,13 @@ export const Booking = () => {
         >
           <div className="text-center sm:mb-5 ">
             <p className="text-5xl text-slate-200 font-bold max-md:text-3xl">
-              ARE YOU LOOKING TO TRAVEL ?
+              {t('booking.title')}
             </p>
             <p className="text-2xl text-slate-200 font-bold max-md:text-lg">
-              Make A Reservation By Clicking The Button
+              {t('booking.subtitle')}
             </p>
           </div>
-          <Button text="Book Yours Now" />
+          <Button text={t('booking.bookingBtn')} />
         </div>
       </div>
     </div>

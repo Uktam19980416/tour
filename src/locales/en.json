@@ -50,5 +50,155 @@
       "dailyPlaces": "Daily Places To Visit",
       "makeReservation": "Make a reservation"
     }
+  },
+
+  "visa": {
+    "imageAlt": "Italy",
+    "title": "Visa Support",
+    "text": "Experience stress-free travel with our expert visa support. We provide seamless assistance and comprehensive guidance, ensuring a smooth journey.",
+    "card1": {
+      "imageAlt": "Italy, Rome",
+      "country": "Italy",
+      "checkIn": "Check Ins",
+      "person": "person",
+      "dealIncludes": "Deal Includes",
+      "prices": "Best Prices",
+      "processingTime": "Short Processing Time",
+      "assistance": "Trustworthy Assistance",
+      "makeReservation": "Make a reservation"
+    },
+    "card2": {
+      "imageAlt": "Italy, Rome",
+      "country": "Italy",
+      "checkIn": "Check Ins",
+      "person": "person",
+      "dealIncludes": "Deal Includes",
+      "prices": "Best Prices",
+      "processingTime": "Short Processing Time",
+      "assistance": "Trustworthy Assistance",
+      "makeReservation": "Make a reservation"
+    }
+  },
+
+  "explore": {
+    "title": "Explore Destinations With Ease",
+    "text": "Find the best deals on railway and airplane tickets in each city, carefully selected for you.",
+    "card1": {
+      "imageAlt": "Railway",
+      "title": "Cheap Railway Tickets With Us",
+      "subText": "Whole world",
+      "exploreMore": "Explore More",
+      "text": "Embark on a railway adventure and explore destinations worldwide. Whether its the picturesque landscapes, bustling cities, or cultural gems, our rail services offer a unique and comfortable way to traverse the globe. Immerse yourself in the beauty of different cultures, all accessible through our extensive railway network."
+    },
+    "card2": {
+      "imageAlt": "Airplane",
+      "title": "Discover Exciting Air Travel Deals",
+      "subText": "Whole world",
+      "exploreMore": "Explore More",
+      "text": "Embark on an airborne adventure and explore destinations worldwide. Whether its the breathtaking landscapes, vibrant cities, or cultural treasures, our airline services provide a convenient and exhilarating way to navigate the globe. Immerse yourself in the richness of diverse cultures, all easily accessible through our extensive air travel network."
+    }
+  },
+
+  "visit": {
+    "title": "Visit One Of Our Countries Now",
+    "text": "Discover the best offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences.",
+    "card1": {
+      "imageAlt": "Dubai",
+      "title": "Dubai",
+      "subText": "United Arab Emirates",
+      "exploreMore": "Explore More",
+      "text": "Dubai is a city and emirate in the United Arab Emirates known for luxury shopping, ultramodern architecture and a lively nightlife scene. Burj Khalifa, an 830m-tall tower, dominates the skyscraper-filled skyline. At its foot lies Dubai Fountain, with jets and lights choreographed to music. On artificial islands just offshore is Atlantis, The Palm, a resort with water and marine-animal parks.",
+      "population": "8.66 Mil People",
+      "area": "41.290 km²",
+      "price": "$1.100.200",
+      "directions": "Need directions?"
+    },
+    "card2": {
+      "imageAlt": "Antalya",
+      "title": "Antalya",
+      "subText": "Turkey",
+      "exploreMore": "Explore More",
+      "text": "Antalya is the fastest-growing city in Turkey, and tourists from around the world are discovering its fabulous mix of great beaches and traditional Turkish culture. Kids will love the Beach Park, which features Aqua Land (a waterslide-fanatics dream) and Dolphin Land (home to dolphins, sea lions and white whales). Make sure to explore the old town center and to see Hadrians Gate.",
+      "population": "44.48 Mil People",
+      "area": "275.400 km²",
+      "price": "$946.000",
+      "directions": "Need directions?"
+    },
+    "card3": {
+      "imageAlt": "Sharm El-Sheikh",
+      "title": "Sharm El-Sheikh",
+      "subText": "Egypt",
+      "exploreMore": "Explore More",
+      "text": "Sharm El Sheikh is the center of tourism action in Sinai Peninsula and it has the world top diving sites. Specially the underwater wonders of Ras Mohammed national park that took Sharm city to whole different level. The city has diving and shipwreck sites that attract both advanced and recreational divers from around the world to discover the un parallel marine life deep down the red sea.",
+      "population": "67.41 Mil People",
+      "area": "551.500 km²",
+      "price": "$425.600",
+      "directions": "Need directions?"
+    },
+    "card4": {
+      "imageAlt": "Istanbul",
+      "title": "Istanbul",
+      "subText": "Turkey",
+      "exploreMore": "Explore More",
+      "text": "Istanbul is the most populous city in Turkey and its cultural, economic and historic center. It is located in north-western part of Turkey, divided into European and Asian side by Bosphorus, which connects the Sea of Marmara and Black Sea. It is the only city in the world that sits on two continents.",
+      "population": "67.41 Mil People",
+      "area": "551.500 km²",
+      "price": "$425.600",
+      "directions": "Need directions?"
+    }
+  },
+
+  "locations": {
+    "title": "Best Locations",
+    "text": "Discover the best offers in each city, curated just for you. Immerse yourself in a world of savings and indulge in unparalleled experiences."
+  },
+
+  "reservation": {
+    "title": "Book Preferred Deal Here",
+    "subtitle": "Make Your Reservation",
+    "buttonText": "Discover More",
+    "phone": {
+      "title": "Make a Phone Call",
+      "number": "+998 99 299 99 96"
+    },
+    "email": {
+      "title": "Contact Us via Email",
+      "address": "gotour@gmail.com"
+    },
+    "location": {
+      "title": "Visit Our Offices",
+      "address": "Tashkent city"
+    }
+  },
+
+  "contact": {
+    "form": {
+      "title": "Make Your",
+      "subtitle": "Reservation Through This Form",
+      "name": "Your Name",
+      "namePlaceholder": "Enter your name",
+      "surname": "Your Surname",
+      "guests": "Number Of Guests",
+      "select": "Select...",
+      "checkIn": "Check In Date",
+      "destination": "Choose Your Destination",
+      "visaSupport": "Choose Your Visa Support",
+      "saudiArabia": "Saudi Arabia",
+      "europe": "Europe",
+      "turkey": "Turkey",
+      "china": "China",
+      "submit": "Make Your Reservation Now"
+    }
+  },
+
+  "booking": {
+    "title": "ARE YOU LOOKING TO TRAVEL?",
+    "subtitle": "Make A Reservation By Clicking The Button",
+    "bookingBtn": "Book Yours Now"
+  },
+
+  "footer": {
+    "copyright": "Copyright © {{year}}",
+    "allRightsReserved": "All rights reserved."
   }
 }
