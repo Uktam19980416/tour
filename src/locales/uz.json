@@ -177,7 +177,7 @@
       "subtitle": "Buyurtmangizni Ushbu Form orqali qiling",
       "name": "Ismingiz",
       "namePlaceholder": "Ismingizni kiriting",
-      "surname": "Familiyangiz",
+      "mobileNumber": "Sizning mobil raqamingiz",
       "guests": "Mehmonlar Soni",
       "select": "Tanlang...",
       "checkIn": "Kirish Sanasi",
@@ -187,7 +187,12 @@
       "europe": "Yevropa",
       "turkey": "Turkiya",
       "china": "Xitoy",
-      "submit": "Hozir Buyurtma Qiling"
+      "submit": "Hozir Buyurtma Qiling",
+      "mekkah": "Makka",
+      "dubai": "Dubay",
+      "antalya": "Antaliya",
+      "barcelona": "Barselona",
+      "message": "Kontaktlaringiz yuborildi! Biz imkon qadar tezroq siz bilan bog'lanamiz!"
     }
   },
 

@@ -177,7 +177,7 @@
       "subtitle": "Reservation Through This Form",
       "name": "Your Name",
       "namePlaceholder": "Enter your name",
-      "surname": "Your Surname",
+      "mobileNumber": "Your mobile number",
       "guests": "Number Of Guests",
       "select": "Select...",
       "checkIn": "Check In Date",
@@ -187,7 +187,12 @@
       "europe": "Europe",
       "turkey": "Turkey",
       "china": "China",
-      "submit": "Make Your Reservation Now"
+      "submit": "Make Your Reservation Now",
+      "mekkah": "Mekkah",
+      "dubai": "Dubai",
+      "antalya": "Antalya",
+      "barcelona": "Barcelona",
+      "message": "Your contacts have been sent! We will contact you as soon as possible!"
     }
   },
 
