@@ -79,7 +79,7 @@ export const Contact = () => {
               d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z"
             />
           </svg>
-          <span className="text-slate-200">{t("contact.form.message")}</span>
+          <span className="text-slate-200">{t('contact.form.message')}</span>
         </div>
       )}
 
@@ -160,8 +160,8 @@ export const Contact = () => {
             <span className="text-orange-600">*</span>
             <select className="border-2 border-solid border-slate-300 py-3 px-2 bg-transparent w-full rounded-full text-slate-900 text-xl">
               <option defaultValue={0}>{t('contact.form.select')}</option>
-              <option value={t('contact.form.mekkah')}>
-                {t('contact.form.mekkah')}
+              <option value={t('contact.form.makkah')}>
+                {t('contact.form.makkah')}
               </option>
               <option value={t('contact.form.dubai')}>
                 {t('contact.form.dubai')}

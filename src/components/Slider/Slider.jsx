@@ -67,15 +67,17 @@ class CitiesSlider extends React.Component {
               key={slide.city}
             >
               <div className="slider__slide-content">
-                <h3 className="slider__slide-subheading max-sm:text-xl">
+                <h3 className="slider__slide-subheading max-sm:text-xl max-iphone:text-sm">
                   {slide.country || slide.city}
                 </h3>
-                <h2 className="slider__slide-heading font-semibold max-sm:text-5xl">
+                <h2 className="slider__slide-heading font-semibold max-sm:text-5xl max-iphone:text-3xl">
                   {slide.city.split('').map((l, i) => (
                     <span key={i}>{l}</span>
                   ))}
                 </h2>
-                <p className="slider__slide-readmore text-xl">{t("readMore")}</p>
+                <p className="slider__slide-readmore text-xl">
+                  {t('readMore')}
+                </p>
               </div>
               <div className="slider__slide-parts">
                 {[...Array(this.IMAGE_PARTS).keys()].map((i) => (

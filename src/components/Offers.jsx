@@ -4,7 +4,6 @@ import { AutoScroll } from '@splidejs/splide-extension-auto-scroll'
 import '@splidejs/splide/dist/css/splide.min.css'
 import italy from '../images/Italy.jpg'
 import logo from '../images/mainLogo.png'
-import { Button } from './Button'
 import { useTranslation } from 'react-i18next'
 
 export const Offers = () => {
@@ -60,7 +59,7 @@ export const Offers = () => {
           <div className="splide__track">
             <ul className="splide__list">
               <li className="splide__slide">
-                <div className="relative h-[400px]">
+                <div className="relative h-[400px] md:h-[500px] max-xl:h-[500px]">
                   <div className="w-4/6 h-[250px]">
                     <img
                       className="w-full h-full object-cover rounded-l-[10%]"
@@ -118,12 +117,16 @@ export const Offers = () => {
                         </li>
                       </ul>
                     </div>
-                    <Button text={t('offers.card1.makeReservation')} />
+                    <div className="text-center bg-slate-200 py-3 max-sm:py-1 rounded-full hover:bg-slate-800 hover:text-slate-200 text-slate-700 transition-all cursor-pointer max-sm:w-full max-sm:mt-5 max-sm:mx-auto">
+                      <button className="text-lg px-10 font-semibold max-sm:text-xs">
+                        {t('offers.card1.makeReservation')}
+                      </button>
+                    </div>
                   </div>
                 </div>
               </li>
               <li className="splide__slide">
-                <div className="relative h-[400px]">
+                <div className="relative h-[400px] md:h-[500px] max-xl:h-[500px]">
                   <div className="w-4/6 h-[250px]">
                     <img
                       className="w-full h-full object-cover rounded-l-[10%]"
@@ -181,7 +184,11 @@ export const Offers = () => {
                         </li>
                       </ul>
                     </div>
-                    <Button text={t('offers.card2.makeReservation')} />
+                    <div className="text-center bg-slate-200 py-3 max-sm:py-1 rounded-full hover:bg-slate-800 hover:text-slate-200 text-slate-700 transition-all cursor-pointer max-sm:w-full max-sm:mt-5 max-sm:mx-auto">
+                      <button className="text-lg px-10 font-semibold max-sm:text-xs">
+                        {t('offers.card2.makeReservation')}
+                      </button>
+                    </div>
                   </div>
                 </div>
               </li>
