@@ -36,7 +36,7 @@ export const Reservation = () => {
       <div className="container w-[1440px] max-sm:px-2 max-sm:w-full max-w-4/5 mx-auto">
         <div
           className="grid grid-cols-3 gap-5 max-md:grid-cols-2 max-sm:grid-cols-1"
-          data-aos="flip-up"
+          // data-aos="flip-up"
         >
           <div className="relative -top-20 py-5 flex flex-col justify-between gap-2 bg-white items-center rounded-3xl shadow shadow-slate-300 border-2">
             <div className="rounded-full py-3 px-4 bg-slate-100">
